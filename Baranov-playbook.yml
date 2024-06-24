@@ -1,0 +1,12 @@
+- name: HW10
+  hosts: Baranov
+  tasks:
+  - name: Installing cmatrix
+    become: yes
+    apt: pkg=cmatrix state=present
+  - name: Installing cowsay
+    become: yes
+    apt: pkg=cowsay state=present
+  - name: Installing sl
+    become: yes
+    apt: pkg=sl state=present
